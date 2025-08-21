@@ -10,7 +10,7 @@ and return the fine amount.
 
 
 function totalFine(money) {
-    if (money==='number' && money > 0) {
+    if (typeof money==='number' && money > 0) {
         const surcharge = (money * 0.2);
         const fine = money + surcharge + 30;
         return fine;
@@ -21,5 +21,5 @@ function totalFine(money) {
 }
 
 
-const total = totalFine("65");
+const total = totalFine(50);
 console.log(total);
